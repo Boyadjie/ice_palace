@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+
+$font-1: "Poppins", sans-serif;
+$font-2: "Roboto Mono";
+
+$color-1: #DD2C74;
+$color-2: #f7f7f7;
+$color-3: #242424;
+$color-4: #626262;
+$color-5: #C7C7C7;
+
+$font-min: 1.8rem;
+$font-small: 2.4rem;
+$font-medium: 3.2rem;
+$font-big: 4.8rem;
+$font-title: 12rem;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: $font-1;
+  color: $color-3;
+  background-color: $color-2;
+  line-height: 1;
+  overflow-x: hidden;
+  position: relative;
+}
+h1 {
+  font-family: $font-2;
+  color: $color-3;
+  font-size: #{"min(max(3.2rem, 10vw), 12rem)"};
+  width:max-content;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: $color-3;
+  cursor: pointer;
+}
+a:visited {
+  color: $color-3;
+}
+span {
+  display: block;
+}
+.wrap {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+.btn {
+  font-size: $font-small;
+  font-weight: 700;
+  width: max-content;
+}
+.btn-arrow {
+  a {
+    position: relative;
+    width: max-content;
+    display: block;
+    z-index: 5;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 120%;
+      background: url(../assets/arrow.svg) center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: translateX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+      &::after {
+        transform: translateX(15%);
+      }
+    }
+
+  }
+}
