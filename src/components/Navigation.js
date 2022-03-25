@@ -8,7 +8,6 @@ const Navigation = () => {
       <nav>
         <NavLink exact to='/'>Accueil</NavLink>
         <NavLink exact to='/glaces'>Nos glaces</NavLink>
-        <NavLink exact to='/localisation'>Où nous trouver ?</NavLink>
         <NavLink exact to='/a-propos'>À propos</NavLink>
         <NavLink exact to='/contact'>Contact</NavLink>
       </nav>

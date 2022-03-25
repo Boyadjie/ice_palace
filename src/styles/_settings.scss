@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
 
-$font-1: "Poppins", sans-serif;
-$font-2: "Roboto Mono";
+@font-face {
+  font-family: 'Californian';
+  src: url(./../assets/fonts/californian.ttf) format("truetype");
+}
 
-$color-1: #DD2C74;
-$color-2: #f7f7f7;
-$color-3: #242424;
-$color-4: #626262;
-$color-5: #C7C7C7;
+@font-face {
+  font-family: 'Lucida';
+  src: url(./../assets/fonts/lucida-sans-regular.ttf) format("truetype");
+}
+
+$font-1: "Californian", sans-serif;
+$font-2: "Lucida", sans-serif;
+
+$color-1: #42C1BD;
+$color-2: #FFF9F3;
+$color-3: #FFF3E8;
+$color-4: #707070;
+$color-5: black;
+$color-6: #F5BAF7;
 
 $font-min: 1.8rem;
 $font-small: 2.4rem;
@@ -25,16 +36,16 @@ html {
   font-size: 10px;
 }
 body {
-  font-family: $font-1;
-  color: $color-3;
+  font-family: $font-2;
+  color: $color-5;
   background-color: $color-2;
   line-height: 1;
   overflow-x: hidden;
   position: relative;
 }
 h1 {
-  font-family: $font-2;
-  color: $color-3;
+  font-family: $font-1;
+  color: $color-5;
   font-size: #{"min(max(3.2rem, 10vw), 12rem)"};
   width:max-content;
 }
@@ -43,11 +54,11 @@ li {
 }
 a {
   text-decoration: none;
-  color: $color-3;
+  color: $color-5;
   cursor: pointer;
 }
 a:visited {
-  color: $color-3;
+  color: $color-5;
 }
 span {
   display: block;
