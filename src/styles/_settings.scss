@@ -17,7 +17,7 @@ $color-5: black;
 $color-6: #F5BAF7;
 
 $font-min: 1.8rem;
-$font-small: 2.4rem;
+$font-small: 2.5rem;
 $font-medium: 3.2rem;
 $font-big: 4.8rem;
 $font-title: 12rem;
@@ -55,7 +55,7 @@ a {
 a:visited {
   color: $color-5;
 }
-span {
+span, img {
   display: block;
 }
 .wrap {

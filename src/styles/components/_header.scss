@@ -1,6 +1,60 @@
-nav {
-  a {
-    font-family: $font-1;
-    font-weight: bold;
+  header {
+    .logo {
+      width: max-content;
+      margin: 0 auto;
+      padding: 1rem 0;
+      
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .navigation {
+      background: $color-3;
+      nav {
+        padding: 2rem 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 1rem;
+
+        > * {
+          font-size: $font-small;
+          font-weight: bold;
+          margin: 0 10px;
+          width: max-content;
+          
+          &:hover {
+            color: $color-1;
+          }
+
+          &.active {
+            color: $color-1;
+          }
+        }
+      }
+    }
   }
-}
+
+  @media screen and (max-width: 650px) {
+    header {
+      .logo {
+        img {
+          width: 50%;
+        }
+      }
+  
+      .navigation {
+        nav {
+          padding: 1rem 2.5rem;
+          flex-direction: column;
+  
+          > * {
+            font-size: $font-min;
+          }
+        }
+      }
+    }
+  }
