@@ -36,15 +36,19 @@ const Footer = () => {
           <div className='shops'>
             <h3>Nos magasins</h3>
 
-            {cities.map((city) =>
-              <p>{city}</p>
-            )}
+            <div className='cities'>
+              {cities.map((city) =>
+                <p>{city}</p>
+              )}
+            </div>
           </div>
           <div className='contact'>
             <h3>Contact</h3>
 
-            <p>mail: contact@ice.palace</p>
-            <p>tel: 06 25 54 67 27</p>
+            <div className='infos'>
+              <p>mail: contact@ice.palace</p>
+              <p>tel: 06 25 54 67 27</p>
+            </div>
           </div>
           <Newsletter />
         </div>

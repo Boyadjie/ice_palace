@@ -43,7 +43,7 @@
       .navigation {
         nav {
           > * {
-            font-size: $font-small;
+            font-size: $resp-14-medium;
           }
         }
       }
@@ -64,7 +64,7 @@
           flex-direction: column;
   
           > * {
-            font-size: $font-min;
+            font-size: $resp-14-small;
           }
         }
       }

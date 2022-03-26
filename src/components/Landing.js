@@ -8,7 +8,7 @@ const Landing = (props) => {
         <a className='btn viewMore' href={props.link}>VOIR PLUS</a>
       </div>
       <div className='scrollBtn'>
-        <p><img src="/img/scroll.svg" alt="Down arrow" /></p>
+        <p><img src="/img/home/scroll.svg" alt="Down arrow" /></p>
       </div>
     </div>
   );

@@ -3,7 +3,8 @@ footer {
   background: $color-3;
 
   h3 {
-    font-size: $font-medium;
+    font-size: $font-small;
+    font-weight: normal;
   }
 
   p {
@@ -26,9 +27,102 @@ footer {
       height: 7.6rem;
       padding: 5px;
       justify-content: center;
+      transition: all 0.5s ease-in-out;
 
       img {
         width: 80%;
+      }
+
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .content {
+    padding: 3rem 5rem;
+    padding-bottom: 1rem;
+
+    >div {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 1rem;
+
+      .shops {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+
+        .cities {
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 1rem;
+          text-align: center;
+        }
+      }
+
+      .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+
+        .infos {
+          p {
+            margin-bottom: 1rem;
+            text-align: center;
+          }
+        }
+      }
+
+      .newsletter {
+        h3 {
+          margin-bottom: 1.5rem;
+        }
+
+        form {
+          margin-top: 0.5rem;
+
+          #mail {
+            display: inline-block;
+            vertical-align: middle;
+            border: none;
+            background-color: $color-1-transparent;
+            border-radius: 50px;
+            padding: 1rem 3rem;
+            padding-right: 10rem;
+            font-size: $font-footer;
+            color: white;
+
+            &::placeholder {
+              color: white;
+              opacity: inherit;
+            }
+          }
+
+          .btn {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 1rem 4rem;
+            transform: translateX(-2rem);
+            font-size: $font-footer;
+          }
+        }
+      }
+
+      &.legals {
+        padding-top: 2rem;
+
+        a {
+          &:hover {
+            color: $color-1;
+          }
+        }
       }
     }
   }
@@ -47,6 +141,13 @@ footer {
 
 @media screen and (max-width: 1440px) {
   footer {
+    h3 {
+      font-size: $resp-14-small;
+    }
+
+    p {
+      font-size: $resp-14-footer;
+    }
     .socials {
       gap: 4rem;
       
@@ -56,9 +157,18 @@ footer {
       }
     }
 
-    .copyright {
-      p {
-        font-size: $font-copyright;
+    .content {
+      >div {
+        .newsletter {
+          form {
+            #mail {
+              font-size: $resp-14-footer;
+            }
+            .btn {
+              font-size: $resp-14-footer;
+            }
+          }
+        }
       }
     }
   }
