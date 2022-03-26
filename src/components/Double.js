@@ -7,7 +7,7 @@ const Double = (props) => {
         <div>
           <img src={`/img/home/${props.imageName}`} alt={`${props.title}`} />
         </div>
-        <a className='btn viewMore' href={props.link}>VOIR PLUS</a>
+        <a className='btn' href={props.link}>VOIR PLUS</a>
       </div>
 
       <div className='content'>

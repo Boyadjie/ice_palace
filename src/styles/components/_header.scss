@@ -21,7 +21,7 @@
         gap: 1rem;
 
         > * {
-          font-size: $font-small;
+          font-size: $font-medium;
           font-weight: bold;
           margin: 0 10px;
           width: max-content;
@@ -32,6 +32,18 @@
 
           &.active {
             color: $color-1;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    header {
+      .navigation {
+        nav {
+          > * {
+            font-size: $font-small;
           }
         }
       }
