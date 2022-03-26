@@ -1,0 +1,75 @@
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .productTitle{
+        font-size: 80px;
+        font-weight: bold;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row{
+        display: flex;
+        justify-content: center;
+    }
+    .rowSub{
+        display: flex;
+        font-size: 25px;
+        justify-content: space-between;
+        width: 1440px;
+    }
+    .columnSub{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        width: 1440px;
+        height: 1300px;
+    }
+    .TOPimage{
+        width: 1270px;
+        height: 730px;
+        margin-bottom: 150px;
+    }
+    .LEFTimage{
+        width: 865px;
+        height: 1300px;
+        margin-bottom: 150px;
+    }
+    .DPLeft{
+        height: 666px;
+        width: 536px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .productDesciption{
+        height: 266px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 70px;
+    }
+    .DPRight{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 560px;
+        width: 560px;
+    }
+    .DPRPara{
+        display: flex;
+        justify-content: space-between;
+    }
+    .PRicon{
+        margin-right: 50px;
+        width: 112px;
+    }
+}
