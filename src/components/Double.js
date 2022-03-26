@@ -2,12 +2,12 @@ import React from 'react';
 
 const Double = (props) => {
   return (
-    <div className={`doubleBloc ${props.flexDirection}`}>
+    <div className={`doubleBloc ${props.flexDirection}`} id={`${props.title.replace(' ', '-').toLowerCase()}`} >
       <div className='doubleImg'>
         <div>
           <img src={`/img/home/${props.imageName}`} alt={`${props.title}`} />
         </div>
-        <a className='btn viewMore' href="#">VOIR PLUS</a>
+        <a className='btn viewMore' href={props.link}>VOIR PLUS</a>
       </div>
 
       <div className='content'>

@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Landing = () => {
+const Landing = (props) => {
   return (
     <div className='landingPage'>
       <div className='landingImg'>
-        <img src="/img/home/landingImg.jpg" alt="Landing page" />
-        <a className='btn viewMore' href="#">VOIR PLUS</a>
+        <img src={`/img/home/${props.imageName}`} alt="Landing page" />
+        <a className='btn viewMore' href={props.link}>VOIR PLUS</a>
       </div>
       <div className='scrollBtn'>
-        <a href="#"><img src="/img/scroll.svg" alt="Down arrow" /></a>
+        <p><img src="/img/scroll.svg" alt="Down arrow" /></p>
       </div>
     </div>
   );

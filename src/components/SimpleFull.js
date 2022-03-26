@@ -9,7 +9,7 @@ const SimpleFull = (props) => {
       <div className='content'>
         <h2>{props.title}</h2>
         <p>{props.paragraph}</p>
-        <a className='btn viewMore' href="#">VOIR PLUS</a>
+        <a className='btn viewMore' href={props.link}>VOIR PLUS</a>
       </div>
     </div>
   );
