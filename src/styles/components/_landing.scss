@@ -1,0 +1,52 @@
+.landingPage {
+  display: block;
+
+  .landingImg {
+    display: block;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .btn {
+      position: absolute;
+      bottom: 3rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      transform-origin: center;
+    }
+  }
+
+  .scrollBtn {
+    width: max-content;
+    margin: 0 auto;
+    padding: 5rem;
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .landingPage {
+    .scrollBtn {
+      p {
+        img {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
