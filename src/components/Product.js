@@ -13,7 +13,7 @@ const product = (props) => {
                             <p>{props.desc2}</p>
                             <p>{props.desc3}</p>
                         </div>
-                        <a href="/cart" className="BTN">ACHETER</a>
+                        <a href="/cart" className="btn">ACHETER</a>
                     </div>
 
                     <div className="DPRight">
