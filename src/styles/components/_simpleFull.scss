@@ -1,9 +1,28 @@
 .simpleFull {
+  padding-top: 10rem;
+
   .imgFull {
     display: block;
 
     img {
       width: 100%;
+    }
+  }
+
+  .content {
+    padding: 3rem 5rem;
+    text-align: center;
+
+    h2 {
+      margin: 0 auto;
+    }
+
+    p {
+      margin: 4rem 0;
+    }
+
+    .btn {
+      margin: 0 auto;
     }
   }
 }

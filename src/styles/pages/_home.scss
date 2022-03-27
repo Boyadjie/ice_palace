@@ -1,0 +1,25 @@
+#home {
+  h2, p {
+    color: $color-4;
+  }
+
+  h2 {
+    font-size: $font-medium;
+  }
+
+  p {
+    font-size: $font-small;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #home {
+    h2 {
+      font-size: $resp-14-medium;
+    }
+  
+    p {
+      font-size: $resp-14-small;
+    }
+  }
+}
