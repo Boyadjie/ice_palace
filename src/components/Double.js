@@ -12,8 +12,10 @@ const Double = (props) => {
 
       <div className='content'>
         <h2>{props.title}</h2>
-        <p>{props.paragraphOne}</p>
-        <p>{props.paragraphTwo}</p>
+        <div className='text'>
+          <p>{props.paragraphOne}</p>
+          <p>{props.paragraphTwo}</p>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,89 @@
+.doubleBloc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+
+  padding: 10rem 0;
+
+  .doubleImg {
+    display: block;
+    width: 90%;
+    position: relative;
+
+    >div {
+      img {
+        width: 100%;
+      }
+    }
+
+    .btn {
+      position: absolute;
+    }
+  }
+
+  .content {
+    width: fit-content;
+
+    h2 {
+      margin: 0 auto;
+      margin-bottom: 10rem;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      
+      p {
+        width: 70%;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &.row {
+    flex-direction: row;
+
+    .doubleImg {
+      .btn {
+        right: -5rem;
+        bottom: -2rem;
+      }
+    }
+
+    .content {
+      .text {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &.row-reverse {
+    flex-direction: row-reverse;
+
+    .doubleImg {
+      .btn {
+        left: -5rem;
+        bottom: -2rem;
+      }
+    }
+
+    .content {
+      .text {
+        align-items: flex-end;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .doubleImg {
+    display: block;
+
+    >div {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
