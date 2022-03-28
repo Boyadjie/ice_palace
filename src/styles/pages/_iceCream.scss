@@ -37,3 +37,15 @@
     }
   }
 }
+
+@media screen and (max-width: 1440px) {
+  .ice-cream {
+    h2 {
+      font-size: $resp-14-medium;
+    }
+  
+    p {
+      font-size: $resp-14-small;
+    }
+  }
+}
