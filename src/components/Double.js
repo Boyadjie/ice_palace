@@ -5,7 +5,7 @@ const Double = (props) => {
     <div className={`doubleBloc ${props.flexDirection}`} id={`${props.title.replace(' ', '-').toLowerCase()}`} >
       <div className='doubleImg'>
         <div>
-          <img src={`/img/home/${props.imageName}`} alt={`${props.title}`} />
+          <img src={props.imageName} alt={props.title} />
         </div>
         <a className='btn' href={props.link}>VOIR PLUS</a>
       </div>
