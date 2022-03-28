@@ -2,4 +2,38 @@
   >div:not(header, footer) {
     padding: 10rem;
   }
+
+  .doubleBloc {
+    .doubleImg {
+      width: 55%;
+    }
+
+    .content {
+      width: 40%;
+
+      .text {
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  h2, p {
+    color: $color-4;
+  }
+
+  h2 {
+    font-size: $font-medium;
+  }
+
+  p {
+    font-size: $font-small;
+  }
+
+  footer {
+    p {
+      color: $color-5;
+    }
+  }
 }
