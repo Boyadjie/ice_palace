@@ -1,0 +1,5 @@
+.ice-cream {
+  >div:not(header, footer) {
+    padding: 10rem;
+  }
+}
