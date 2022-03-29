@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Rainbow from './pages/Rainbow';
 import Gold from './pages/Gold';
 import Blue from './pages/Blue';
+import Mistery from './pages/Mistery';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <Route exact path='/arc-en-ciel' element={<Rainbow  />} />
         <Route exact path='/or' element={<Gold  />} />
         <Route exact path='/banane-bleu' element={<Blue  />} />
+        <Route exact path='/mystere' element={<Mistery  />} />
         <Route path='*' element={<NotFound/>} />
       </Routes>
     </BrowserRouter>
