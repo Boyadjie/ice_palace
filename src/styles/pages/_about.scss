@@ -1,0 +1,46 @@
+.containerAbout{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.paraAbout{
+    font-size: 25px;
+    margin-bottom: 80px;
+}
+
+.contenu{
+    width: 80%;
+    height: 1000px;
+    border: solid 3px #F5BAF7;
+    margin-bottom: 70px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.CTop{
+    display: flex;
+}
+.imgAbout{
+    width: 50%;
+    padding: 100px 30px 100px ;
+    border-right: solid 3px black;
+}
+.rightPara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 30px;
+    font-size: 20px;
+}
+

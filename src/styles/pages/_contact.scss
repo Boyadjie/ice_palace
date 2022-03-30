@@ -1,0 +1,65 @@
+
+
+textarea{
+    resize: none;
+    height: 200px;
+    margin-bottom: 70px;
+}
+
+.containerContact{
+    text-align: center;
+    margin: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+.paraContact{
+    font-size: 25px;
+    margin-bottom: 80px;
+}
+
+.form{
+    display: flex;
+    width: 75%;
+    height: 1200px;
+    border: solid 3px $color-6;
+}
+.leftForm{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rightForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 100px;
+
+}
+.input{
+    border: none;
+    background: transparent;
+    width: 300px;
+    margin-top: 110px;
+    font-size: 25px;
+    border-bottom: solid 3px #707070;
+
+}
+
+.map{
+    width: 300px;
+}
+
+.formAdress{
+    font-size: 25px;
+    text-align: start;
+    padding-left: 60px;
+}
