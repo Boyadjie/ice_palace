@@ -92,6 +92,23 @@ span, img {
   }
 }
 
+.notFound {
+  height: 95vh;
+  background: url(./../assets/404.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  .btn {
+    margin-bottom: 2rem;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .btn {
     font-size: $font-min;
